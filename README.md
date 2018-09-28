@@ -8,3 +8,4 @@ While the main parts of the project work fine, I believe there may be a few sect
 Important Note: Since you would not have the database connected on your local machine, there is a good chance that you would not be
 able to get beyond the registration Scene on the program. I assure you though that all of the classes of importance have been 
 commented pretty well and they would hopefully help you understand the code itself.
+Go into bin/application to view the main code.
