@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ChangeEmailController">
+   <children>
+      <AnchorPane prefHeight="297.0" prefWidth="438.0">
+         <children>
+            <Label layoutX="52.0" layoutY="105.0" text="Enter new email address:" />
+            <TextField fx:id="emailField" layoutX="219.0" layoutY="100.0" />
+            <Button fx:id="cancelBtn" layoutX="129.0" layoutY="216.0" mnemonicParsing="false" onAction="#cancelBtnPressed" text="Cancel" />
+            <Button fx:id="doneBtn" layoutX="252.0" layoutY="216.0" mnemonicParsing="false" onAction="#doneBtnPressed" text="Done" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

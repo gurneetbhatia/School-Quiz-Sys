@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.TeacherMenu_ReviewLAQController">
+   <children>
+      <AnchorPane prefHeight="459.0" prefWidth="557.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="34.0" prefWidth="70.0" text="Question:" />
+            <Label fx:id="questionLbl" layoutX="84.0" layoutY="14.0" prefHeight="60.0" prefWidth="462.0" />
+            <Label layoutX="14.0" layoutY="101.0" text="Answer:" />
+            <Label fx:id="answerLbl" layoutX="104.0" layoutY="101.0" prefHeight="187.0" prefWidth="443.0" />
+            <Label layoutX="34.0" layoutY="313.0" text="Marks Awarded:" />
+            <TextField fx:id="marksTF" layoutX="139.0" layoutY="308.0" prefHeight="27.0" prefWidth="409.0" promptText="If you wish to award negative marks, type a '-' before the mark" />
+            <Button fx:id="backBtn" layoutX="110.0" layoutY="402.0" mnemonicParsing="false" onAction="#backBtnPressed" text="Back" />
+            <Button fx:id="doneBtn" layoutX="412.0" layoutY="402.0" mnemonicParsing="false" onAction="#doneBtnPressed" text="Done" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

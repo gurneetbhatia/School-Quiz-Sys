@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TeacherMenuController">
+   <children>
+      <AnchorPane prefHeight="468.0" prefWidth="262.0">
+         <children>
+            <Button fx:id="createNewQuizBtn" layoutX="71.0" layoutY="46.0" mnemonicParsing="false" onAction="#createNewQuizBtnPressed" text="Create new Quiz" />
+            <Button fx:id="viewQuizzesBtn" layoutX="80.0" layoutY="98.0" mnemonicParsing="false" onAction="#viewQuizzesBtnPressed" text="View Quizzes" />
+            <Button fx:id="performanceStatisticsBtn" layoutX="52.0" layoutY="154.0" mnemonicParsing="false" onAction="#performanceStatisticsBtnPressed" text="Performance Statistics" />
+            <Button fx:id="messagesBtn" layoutX="91.0" layoutY="207.0" mnemonicParsing="false" onAction="#messagesBtnPressed" text="Messages" />
+            <Button fx:id="notificationsBtn" layoutX="83.0" layoutY="256.0" mnemonicParsing="false" onAction="#notificationsBtnPressed" text="Notifications" />
+            <Button fx:id="settingsBtn" layoutX="96.0" layoutY="353.0" mnemonicParsing="false" onAction="#settingsBtnPressed" text="Settings" />
+            <Button fx:id="logoutBtn" layoutX="100.0" layoutY="406.0" mnemonicParsing="false" onAction="#logoutBtnPressed" text="Logout" />
+            <Button fx:id="leaderboardBtn" layoutX="82.0" layoutY="308.0" mnemonicParsing="false" onAction="#leaderboardBtnPressed" text="Leaderboard" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

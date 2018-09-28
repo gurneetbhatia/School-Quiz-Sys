@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CreateQuiz_addQuestion_laq">
+   <children>
+      <AnchorPane prefHeight="477.0" prefWidth="494.0">
+         <children>
+            <Label layoutX="38.0" layoutY="80.0" text="Question:" />
+            <TextArea fx:id="questionTA" layoutX="115.0" layoutY="51.0" prefHeight="184.0" prefWidth="369.0" />
+            <Button fx:id="cancelBtn" layoutX="86.0" layoutY="390.0" mnemonicParsing="false" onAction="#cancelBtnPressed" text="Cancel" />
+            <Button fx:id="doneBtn" layoutX="313.0" layoutY="390.0" mnemonicParsing="false" onAction="#doneBtnPressed" text="Done" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

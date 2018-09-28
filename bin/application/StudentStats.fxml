@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudentStatsController">
+   <children>
+      <AnchorPane prefHeight="628.0" prefWidth="819.0">
+         <children>
+            <LineChart fx:id="chart" layoutX="14.0" layoutY="14.0" prefHeight="446.0" prefWidth="532.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+            <ChoiceBox fx:id="studentidCB" layoutX="647.0" layoutY="64.0" prefWidth="150.0" />
+            <Label layoutX="565.0" layoutY="69.0" text="Student ID:" />
+            <Button fx:id="selectBtn" layoutX="658.0" layoutY="156.0" mnemonicParsing="false" onAction="#selectBtnPressed" text="Select" />
+            <Button fx:id="backBtn" layoutX="662.0" layoutY="447.0" mnemonicParsing="false" onAction="#backBtnPressed" text="Back" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

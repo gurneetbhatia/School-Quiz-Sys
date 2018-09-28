@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="School Quiz System.jnlp">
+  <information>
+    <title>School Quiz System</title>
+    <vendor>Gurneet Bhatia</vendor>
+    <description>School Quiz System</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="libs/aopalliance-repackaged-2.5.0-b42.jar" size="14768" download="eager" />
+    <jar href="libs/cdi-api-1.1.jar" size="70701" download="eager" />
+    <jar href="libs/el-api-2.2.jar" size="33936" download="eager" />
+    <jar href="libs/hk2-api-2.5.0-b42.jar" size="186763" download="eager" />
+    <jar href="libs/hk2-locator-2.5.0-b42.jar" size="189454" download="eager" />
+    <jar href="libs/hk2-utils-2.5.0-b42.jar" size="135317" download="eager" />
+    <jar href="libs/javassist-3.22.0-CR2.jar" size="737884" download="eager" />
+    <jar href="libs/javax.annotation-api-1.2.jar" size="26366" download="eager" />
+    <jar href="libs/javax.inject-1.jar" size="2497" download="eager" />
+    <jar href="libs/javax.inject-2.5.0-b42.jar" size="5951" download="eager" />
+    <jar href="libs/javax.json-1.1.jar" size="125521" download="eager" />
+    <jar href="libs/javax.json-api-1.1.jar" size="28540" download="eager" />
+    <jar href="libs/javax.json.bind-api-1.0.jar" size="23665" download="eager" />
+    <jar href="libs/javax.servlet-api-3.0.1.jar" size="85353" download="eager" />
+    <jar href="libs/javax.ws.rs-api-2.1-m09.jar" size="127565" download="eager" />
+    <jar href="libs/jaxb-api-2.2.7.jar" size="100146" download="eager" />
+    <jar href="libs/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar" size="5617" download="eager" />
+    <jar href="libs/jersey-client.jar" size="181510" download="eager" />
+    <jar href="libs/jersey-common.jar" size="1125834" download="eager" />
+    <jar href="libs/jersey-container-servlet-core.jar" size="59275" download="eager" />
+    <jar href="libs/jersey-container-servlet.jar" size="18026" download="eager" />
+    <jar href="libs/jersey-hk2.jar" size="62495" download="eager" />
+    <jar href="libs/jersey-media-jaxb.jar" size="71890" download="eager" />
+    <jar href="libs/jersey-media-json-binding.jar" size="11783" download="eager" />
+    <jar href="libs/jersey-media-sse.jar" size="63427" download="eager" />
+    <jar href="libs/jersey-server.jar" size="920140" download="eager" />
+    <jar href="libs/jsr250-api-1.0.jar" size="5848" download="eager" />
+    <jar href="libs/mysql-connector-java-5.1.43-bin.jar" size="999018" download="eager" />
+    <jar href="libs/org.osgi.core-4.2.0.jar" size="246924" download="eager" />
+    <jar href="libs/osgi-resource-locator-1.0.1.jar" size="20235" download="eager" />
+    <jar href="libs/persistence-api-1.0.jar" size="52150" download="eager" />
+    <jar href="libs/validation-api-1.1.0.Final.jar" size="63777" download="eager" />
+    <jar href="libs/yasson-1.0.jar" size="297132" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="0" height="0" main-class="application.Main"  name="School Quiz System" />
+  <update check="background"/>
+</jnlp>

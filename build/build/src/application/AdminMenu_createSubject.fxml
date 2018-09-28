@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.AdminMenu_createSubjectController">
+   <children>
+      <AnchorPane prefHeight="326.0" prefWidth="368.0">
+         <children>
+            <Label layoutX="100.0" layoutY="65.0" text="Name:" />
+            <TextField fx:id="nameField" layoutX="156.0" layoutY="60.0" />
+            <Button fx:id="createBtn" layoutX="240.0" layoutY="224.0" mnemonicParsing="false" onAction="#createBtnPressed" text="Create" />
+            <Button fx:id="cancelBtn" layoutX="71.0" layoutY="224.0" mnemonicParsing="false" onAction="#cancelBtnPressed" text="Cancel" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

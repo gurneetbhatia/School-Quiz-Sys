@@ -1,0 +1,32 @@
+QuizID = 03466
+Marks = 10.0
+Negative Marks = 5.0
+Question = What is the capital of Greece?
+Question Type = mcq
+Correct Answer: Athens
+Answer 1: London
+Answer 2: Athens
+Answer 3: Rome
+Answer 4: Paris
+*** end ***
+QuizID = 80659
+Marks = 0.0
+Negative Marks = 0.0
+Question = we
+Question Type = laq
+Correct Answer: 73829
+*** end ***
+QuizID = 15820
+Marks = 0.0
+Negative Marks = 0.0
+Question = Differentiate between a library and an API.
+Question Type = laq
+Correct Answer: 73829
+*** end ***
+QuizID = 42615
+Marks = 0.0
+Negative Marks = 0.0
+Question = Differentiate between a library and an API.
+Question Type = laq
+Correct Answer: 73829
+*** end ***

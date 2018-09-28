@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ServerSettingsController">
+   <children>
+      <AnchorPane prefHeight="380.0" prefWidth="536.0">
+         <children>
+            <Label layoutX="144.0" layoutY="95.0" text="URL:" />
+            <Label layoutX="142.0" layoutY="154.0" text="Username:" />
+            <Label layoutX="142.0" layoutY="222.0" text="Password:" />
+            <TextField fx:id="urlTF" layoutX="254.0" layoutY="90.0" />
+            <TextField fx:id="usernameTF" layoutX="254.0" layoutY="149.0" />
+            <TextField fx:id="passwdTF" layoutX="254.0" layoutY="217.0" />
+            <Button fx:id="cancelBtn" layoutX="146.0" layoutY="306.0" mnemonicParsing="false" onAction="#cancelBtnPressed" text="Cancel" />
+            <Button fx:id="doneBtn" layoutX="322.0" layoutY="306.0" mnemonicParsing="false" onAction="#doneBtnPressed" text="Done" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

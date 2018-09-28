@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.ChangeUsernameController">
+   <children>
+      <AnchorPane prefHeight="289.0" prefWidth="396.0">
+         <children>
+            <Label layoutX="58.0" layoutY="78.0" text="New Username:" />
+            <TextField fx:id="usernameLbl" layoutX="198.0" layoutY="73.0" />
+            <Button fx:id="cancelBtn" layoutX="97.0" layoutY="200.0" mnemonicParsing="false" onAction="#cancelBtnPressed" text="Cancel" />
+            <Button fx:id="doneBtn" layoutX="252.0" layoutY="200.0" mnemonicParsing="false" onAction="#doneBtnPressed" text="Done" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

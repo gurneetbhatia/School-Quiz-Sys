@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminMenu_createClassController">
+   <children>
+      <AnchorPane prefHeight="286.0" prefWidth="383.0">
+         <children>
+            <Label layoutX="75.0" layoutY="57.0" text="Name:" />
+            <TextField fx:id="nameField" layoutX="166.0" layoutY="52.0" />
+            <Button fx:id="createBtn" layoutX="220.0" layoutY="199.0" mnemonicParsing="false" onAction="#createBtnPressed" text="Create" />
+            <Button fx:id="cancelBtn" layoutX="105.0" layoutY="199.0" mnemonicParsing="false" onAction="#cancelBtnPressed" text="Cancel" />
+            <ChoiceBox fx:id="subjectCb" layoutX="175.0" layoutY="116.0" prefWidth="150.0" />
+            <Label layoutX="78.0" layoutY="121.0" text="Subject:" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

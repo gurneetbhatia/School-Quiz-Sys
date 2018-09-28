@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.DisplayRVQController">
+   <children>
+      <AnchorPane prefHeight="444.0" prefWidth="493.0">
+         <children>
+            <Label fx:id="questionLbl" layoutX="14.0" layoutY="14.0" prefHeight="77.0" prefWidth="471.0" />
+            <TextArea fx:id="answerTA" layoutX="14.0" layoutY="108.0" prefHeight="189.0" prefWidth="471.0" />
+            <Button fx:id="nextBtn" layoutX="226.0" layoutY="384.0" mnemonicParsing="false" onAction="#nextBtnPressed" text="Next" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

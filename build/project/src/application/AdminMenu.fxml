@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminMenuController">
+   <children>
+      <AnchorPane prefHeight="383.0" prefWidth="255.0">
+         <children>
+            <Button fx:id="createAccountBtn" layoutX="55.0" layoutY="36.0" mnemonicParsing="false" onAction="#createAccountBtnPressed" text="Create New Account" />
+            <Button fx:id="viewAccountsBtn" layoutX="73.0" layoutY="192.0" mnemonicParsing="false" onAction="#viewAccountsBtnPressed" text="View Accounts" />
+            <Button fx:id="createSubjectBtn" layoutX="58.0" layoutY="87.0" mnemonicParsing="false" onAction="#createSubjectBtnPressed" text="Create New Subject" />
+            <Button fx:id="createClassBtn" layoutX="64.0" layoutY="140.0" mnemonicParsing="false" onAction="#createClassBtnPressed" text="Create New Class" />
+            <Button fx:id="myAccountBtn" layoutX="82.0" layoutY="243.0" mnemonicParsing="false" onAction="#myAccountBtnPressed" text="My Account" />
+            <Button fx:id="serverSettingsBtn" layoutX="72.0" layoutY="292.0" mnemonicParsing="false" onAction="#serverSettingsBtnPressed" text="Server Settings" />
+            <Button fx:id="logoutBtn" layoutX="97.0" layoutY="335.0" mnemonicParsing="false" onAction="#logoutBtnPressed" text="Logout" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

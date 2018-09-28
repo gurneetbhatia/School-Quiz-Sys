@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.CreateQuiz_addQuestion_rvq">
+   <children>
+      <AnchorPane prefHeight="696.0" prefWidth="622.0">
+         <children>
+            <Label layoutX="51.0" layoutY="61.0" text="Question:" />
+            <TextArea fx:id="questionTA" layoutX="138.0" layoutY="40.0" prefHeight="138.0" prefWidth="434.0" promptText="Places you wish to enter a random variable, enter a special character ($, %, ^, &amp;, !, @ or # [only these]) follwed by a range like &lt;lower limit, upper limit&gt;. Example $&lt;10.9, 40.3&gt;x + #&lt;0, 5&gt; = 0. The range can include decimals" />
+            <Button fx:id="cancelBtn" layoutX="155.0" layoutY="617.0" mnemonicParsing="false" onAction="#cancelBtnPressed" text="Cancel" />
+            <Button fx:id="doneBtn" layoutX="427.0" layoutY="617.0" mnemonicParsing="false" onAction="#doneBtnPressed" text="Done" />
+            <Label layoutX="56.0" layoutY="205.0" text="Answer:" />
+            <TextArea fx:id="answerTA" layoutX="143.0" layoutY="205.0" prefHeight="153.0" prefWidth="434.0" promptText="Use the variable names you have defined to link them to the final answer. For example, if the question was $&lt;10.9, 40.3&gt;x + #&lt;0,5&gt; = 0, you would enter here how x is dependent on the variables: -#/$" />
+            <TextField fx:id="marksTF" layoutX="286.0" layoutY="426.0" />
+            <TextField fx:id="nmarksTF" layoutX="286.0" layoutY="498.0" />
+            <Label layoutX="101.0" layoutY="431.0" text="Marks for correct answer:" />
+            <Label layoutX="28.0" layoutY="503.0" text="Marks deducted for incorrect answer:" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

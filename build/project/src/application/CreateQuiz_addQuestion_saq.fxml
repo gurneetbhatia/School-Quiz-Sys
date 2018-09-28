@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CreateQuiz_addQuestion_saq">
+   <children>
+      <AnchorPane prefHeight="666.0" prefWidth="607.0">
+         <children>
+            <Label layoutX="73.0" layoutY="49.0" text="Question:" />
+            <TextArea fx:id="questionTA" layoutX="145.0" layoutY="29.0" prefHeight="143.0" prefWidth="420.0" />
+            <Label layoutX="74.0" layoutY="212.0" text="Answers:" />
+            <TextArea fx:id="answersTA" layoutX="145.0" layoutY="194.0" prefHeight="154.0" prefWidth="420.0" promptText="Insert comma after each keyword follwed by a space. Example: one, two" />
+            <Button fx:id="cancelBtn" layoutX="138.0" layoutY="603.0" mnemonicParsing="false" onAction="#cancelBtnPressed" text="Cancel" />
+            <Button fx:id="doneBtn" layoutX="433.0" layoutY="603.0" mnemonicParsing="false" onAction="#doneBtnPressed" text="Done" />
+            <TextField fx:id="marksTF" layoutX="155.0" layoutY="392.0" prefHeight="27.0" prefWidth="281.0" promptText="Marks to be awarded for correct answer" />
+            <TextField fx:id="nmarksTF" layoutX="155.0" layoutY="449.0" prefHeight="27.0" prefWidth="281.0" promptText="Marks to be deducted for incorrect answer" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

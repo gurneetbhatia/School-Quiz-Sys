@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<project name="School Quiz System" default="do-deploy" basedir="."  xmlns:fx="javafx:com.sun.javafx.tools.ant">
+	<target name="init-fx-tasks">
+		<path id="fxant">
+			<filelist>
+				<file name="${java.home}\..\lib\ant-javafx.jar"/>
+				<file name="${java.home}\lib\jfxrt.jar"/>
+			</filelist>
+		</path>
+	
+		<taskdef resource="com/sun/javafx/tools/ant/antlib.xml"
+			uri="javafx:com.sun.javafx.tools.ant"
+			classpathref="fxant"/>
+	</target>
+	<target name="setup-staging-area">
+		<delete dir="externalLibs" />
+		<delete dir="project" />
+		<delete dir="projectRefs" />
+	
+		<mkdir dir="externalLibs" />
+	
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/lib">
+				<filename name="jersey-media-jaxb.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/ext">
+				<filename name="aopalliance-repackaged-2.5.0-b42.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/ext">
+				<filename name="jsr250-api-1.0.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/ext">
+				<filename name="javax.json.bind-api-1.0.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/ext">
+				<filename name="javax.servlet-api-3.0.1.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/ext">
+				<filename name="jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/ext">
+				<filename name="javax.inject-2.5.0-b42.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/lib">
+				<filename name="jersey-hk2.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/ext">
+				<filename name="yasson-1.0.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/ext">
+				<filename name="javassist-3.22.0-CR2.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/lib">
+				<filename name="jersey-media-json-binding.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/ext">
+				<filename name="hk2-api-2.5.0-b42.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/ext">
+				<filename name="osgi-resource-locator-1.0.1.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/ext">
+				<filename name="validation-api-1.1.0.Final.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/mysql-connector-java-5.1.43">
+				<filename name="mysql-connector-java-5.1.43-bin.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/ext">
+				<filename name="javax.inject-1.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/lib">
+				<filename name="jersey-client.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/ext">
+				<filename name="jaxb-api-2.2.7.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/lib">
+				<filename name="jersey-common.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/ext">
+				<filename name="hk2-utils-2.5.0-b42.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/ext">
+				<filename name="javax.annotation-api-1.2.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/ext">
+				<filename name="hk2-locator-2.5.0-b42.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/ext">
+				<filename name="persistence-api-1.0.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/lib">
+				<filename name="jersey-container-servlet-core.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/lib">
+				<filename name="jersey-server.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/ext">
+				<filename name="javax.json-1.1.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/ext">
+				<filename name="el-api-2.2.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/api">
+				<filename name="javax.ws.rs-api-2.1-m09.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/lib">
+				<filename name="jersey-media-sse.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/lib">
+				<filename name="jersey-container-servlet.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/ext">
+				<filename name="org.osgi.core-4.2.0.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/ext">
+				<filename name="javax.json-api-1.1.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/Users/inderdeepbhatia/Downloads/jaxrs-ri-2/ext">
+				<filename name="cdi-api-1.1.jar"/>
+			</fileset>
+		</copy>
+	
+		<mkdir dir="project" />
+		<copy todir="project">
+			<fileset dir="/Users/inderdeepbhatia/Documents/workspace/School Quiz System">
+				<include name="src/**" />
+			</fileset>
+		</copy>
+	
+		<mkdir dir="projectRefs" />
+	</target>
+	<target name='do-compile'>
+		<delete dir="build" />
+		<mkdir dir="build/src" />
+		<mkdir dir="build/libs" />
+		<mkdir dir="build/classes" />
+	
+		<!-- Copy project-libs references -->
+		<copy todir="build/libs">
+			<fileset dir="externalLibs">
+				<include name="hk2-api-2.5.0-b42.jar"/>
+				<include name="jersey-server.jar"/>
+				<include name="jersey-container-servlet-core.jar"/>
+				<include name="org.osgi.core-4.2.0.jar"/>
+				<include name="jersey-media-sse.jar"/>
+				<include name="javax.json-1.1.jar"/>
+				<include name="jersey-common.jar"/>
+				<include name="javassist-3.22.0-CR2.jar"/>
+				<include name="jersey-client.jar"/>
+				<include name="javax.inject-1.jar"/>
+				<include name="jersey-media-jaxb.jar"/>
+				<include name="jaxb-api-2.2.7.jar"/>
+				<include name="persistence-api-1.0.jar"/>
+				<include name="osgi-resource-locator-1.0.1.jar"/>
+				<include name="validation-api-1.1.0.Final.jar"/>
+				<include name="javax.annotation-api-1.2.jar"/>
+				<include name="aopalliance-repackaged-2.5.0-b42.jar"/>
+				<include name="jersey-hk2.jar"/>
+				<include name="javax.json.bind-api-1.0.jar"/>
+				<include name="mysql-connector-java-5.1.43-bin.jar"/>
+				<include name="javax.servlet-api-3.0.1.jar"/>
+				<include name="hk2-utils-2.5.0-b42.jar"/>
+				<include name="hk2-locator-2.5.0-b42.jar"/>
+				<include name="javax.inject-2.5.0-b42.jar"/>
+				<include name="jsr250-api-1.0.jar"/>
+				<include name="cdi-api-1.1.jar"/>
+				<include name="el-api-2.2.jar"/>
+				<include name="javax.json-api-1.1.jar"/>
+				<include name="jersey-media-json-binding.jar"/>
+				<include name="jersey-container-servlet.jar"/>
+				<include name="jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar"/>
+				<include name="yasson-1.0.jar"/>
+				<include name="javax.ws.rs-api-2.1-m09.jar"/>
+			</fileset>
+		</copy>
+	
+		<!-- Copy project references -->
+	
+		<!-- Copy project sources itself -->
+		<copy todir="build/src">
+			<fileset dir="project/src">
+				<include name="**/*"/>
+			</fileset>
+		</copy>
+	
+		<javac includeantruntime="false" source="1.8" target="1.8" srcdir="build/src" destdir="build/classes" encoding="UTF-8">
+			<classpath>
+				<fileset dir="build/libs">
+					<include name="*"/>
+				</fileset>
+			</classpath>
+		</javac>
+	
+		<!-- Copy over none Java-Files -->
+		<copy todir="build/classes">
+		<fileset dir="project/src">
+			<exclude name="**/*.java"/>
+		</fileset>
+		</copy>
+	
+	
+	</target>
+	<target name="do-deploy" depends="setup-staging-area, do-compile, init-fx-tasks">
+		<delete file="dist"/>
+		<delete file="deploy" />
+	
+		<mkdir dir="dist" />
+		<mkdir dir="dist/libs" />
+	
+		<copy todir="dist/libs">
+			<fileset dir="externalLibs">
+				<include name="*" />
+			</fileset>
+		</copy>
+	
+	
+		<fx:resources id="appRes">
+			<fx:fileset dir="dist" includes="School Quiz System.jar"/>
+			<fx:fileset dir="dist" includes="libs/*"/>
+		</fx:resources>
+	
+		<fx:application id="fxApplication"
+			name="School Quiz System"
+			mainClass="application.Main"
+			toolkit="fx"
+		/>
+	
+		<mkdir dir="build/classes/META-INF" />
+	
+	
+	
+		<fx:jar destfile="dist/School Quiz System.jar">
+			<fx:application refid="fxApplication"/>
+			<fileset dir="build/classes">
+			</fileset>
+			<fx:resources refid="appRes"/>
+	
+			<manifest>
+				<attribute name="Implementation-Vendor" value="Gurneet Bhatia"/>
+				<attribute name="Implementation-Title" value="School Quiz System"/>
+				<attribute name="Implementation-Version" value="1.0"/>
+				<attribute name="JavaFX-Feature-Proxy" value="None"/>
+			</manifest>
+		</fx:jar>
+	
+	
+		<mkdir dir="deploy" />
+		<!-- Need to use ${basedir} because somehow the ant task is calculating the directory differently -->
+		<fx:deploy
+			embedJNLP="false"
+			extension="false"
+			includeDT="false"
+			offlineAllowed="true"
+			outdir="${basedir}/deploy"
+			outfile="School Quiz System" nativeBundles="exe"
+			updatemode="background" >
+	
+			<fx:platform basedir="${java.home}"/>
+			<fx:info title="School Quiz System" vendor="Gurneet Bhatia"/>
+	
+			<fx:application refId="fxApplication"/>
+			<fx:resources refid="appRes"/>
+		</fx:deploy>
+	
+	
+	</target>
+</project>

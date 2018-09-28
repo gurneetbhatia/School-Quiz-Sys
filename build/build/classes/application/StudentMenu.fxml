@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.StudentMenuController">
+   <children>
+      <AnchorPane prefHeight="463.0" prefWidth="297.0">
+         <children>
+            <Button fx:id="myQuizzesBtn" layoutX="104.0" layoutY="104.0" mnemonicParsing="false" onAction="#myQuizzesBtnPressed" text="My Quizzes" />
+            <Button fx:id="leaderboardBtn" layoutX="100.0" layoutY="166.0" mnemonicParsing="false" onAction="#leaderboardBtnPressed" text="Leaderboard" />
+            <Button fx:id="myPerformanceBtn" layoutX="89.0" layoutY="232.0" mnemonicParsing="false" onAction="#myPerformanceBtnPressed" text="My performance" />
+            <Button fx:id="accountSettingsBtn" layoutX="87.0" layoutY="297.0" mnemonicParsing="false" onAction="#accountSettingsBtnPressed" text="Account Settings" />
+            <Button fx:id="logoutBtn" layoutX="118.0" layoutY="356.0" mnemonicParsing="false" onAction="#logoutBtnPressed" text="Logout" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

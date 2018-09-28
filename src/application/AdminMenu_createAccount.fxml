@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminMenu_createAccountController">
+   <children>
+      <AnchorPane prefHeight="403.0" prefWidth="590.0">
+         <children>
+            <Label layoutX="197.0" layoutY="71.0" text="Create:" />
+            <ChoiceBox fx:id="createCh" layoutX="267.0" layoutY="66.0" prefWidth="150.0" />
+            <Label layoutX="202.0" layoutY="131.0" text="Name:" />
+            <TextField fx:id="nameField" layoutX="267.0" layoutY="126.0" />
+            <Label layoutX="205.0" layoutY="185.0" text="Email:" />
+            <TextField fx:id="emailField" layoutX="267.0" layoutY="180.0" />
+            <Label layoutX="201.0" layoutY="236.0" text="Class:" />
+            <Button fx:id="createBtn" layoutX="331.0" layoutY="316.0" mnemonicParsing="false" onAction="#createBtnPressed" text="Create" />
+            <Button fx:id="cancelBtn" layoutX="193.0" layoutY="316.0" mnemonicParsing="false" onAction="#cancelBtnPressed" text="Cancel" />
+            <ChoiceBox fx:id="classesCb" layoutX="267.0" layoutY="231.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyAccountController">
+   <children>
+      <AnchorPane prefHeight="349.0" prefWidth="300.0">
+         <children>
+            <Button fx:id="changeEmailBtn" layoutX="99.0" layoutY="60.0" mnemonicParsing="false" onAction="#changeEmailBtnPressed" text="Change Email" />
+            <Button fx:id="changePasswordBtn" layoutX="87.0" layoutY="116.0" mnemonicParsing="false" onAction="#changePasswordBtnPressed" text="Change Password" />
+            <Button fx:id="forgotPasswordBtn" layoutX="89.0" layoutY="175.0" mnemonicParsing="false" onAction="#forgotPasswordBtnPressed" text="Forgot Password" />
+            <Button fx:id="changeUsernameBtn" layoutX="85.0" layoutY="232.0" mnemonicParsing="false" onAction="#changeUsernameBtnPressed" text="Change Username" />
+            <Button fx:id="backBtn" layoutX="126.0" layoutY="293.0" mnemonicParsing="false" onAction="#backBtnPressed" text="Back" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

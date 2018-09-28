@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.DisplaySAQController">
+   <children>
+      <AnchorPane prefHeight="497.0" prefWidth="501.0">
+         <children>
+            <Label fx:id="questionLbl" layoutX="16.0" layoutY="14.0" prefHeight="111.0" prefWidth="476.0" />
+            <TextArea fx:id="answerTA" layoutX="15.0" layoutY="145.0" prefHeight="208.0" prefWidth="476.0" promptText="Answer" />
+            <Button fx:id="nextBtn" layoutX="229.0" layoutY="442.0" mnemonicParsing="false" onAction="#nextBtnPressed" text="Next" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

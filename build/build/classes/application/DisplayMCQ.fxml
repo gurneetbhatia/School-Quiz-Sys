@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.DisplayMCQController">
+   <children>
+      <AnchorPane prefHeight="386.0" prefWidth="426.0">
+         <children>
+            <Label fx:id="questionLbl" layoutX="14.0" layoutY="14.0" prefHeight="76.0" prefWidth="401.0" />
+            <ChoiceBox fx:id="answerCB" layoutX="140.0" layoutY="166.0" prefWidth="150.0" />
+            <Button fx:id="nextBtn" layoutX="186.0" layoutY="320.0" mnemonicParsing="false" onAction="#nextBtnPressed" text="Next" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
